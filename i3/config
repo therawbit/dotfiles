@@ -209,5 +209,5 @@ bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(d
 
 # picom 
 
-exec_always --no-startup-id picom &
+exec_always --no-startup-id picom --experimental-backends &
 
