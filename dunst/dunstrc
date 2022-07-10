@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (200,300)
+    width = (200,400)
 
     # The maximum height of a single notification, excluding the frame.
     height = 300
@@ -68,7 +68,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 20 
+    transparency = 0
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -86,10 +86,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 1 
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#ffffff"
+    frame_color = "#8636ad"
 
     # Define a color for the separator.
     # possible values are:
@@ -229,7 +229,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 10
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -293,15 +293,16 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#222222"
-    foreground = "#888888"
+    foreground = "#d1cdcd"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#285577"
+    background = "#222222"
     foreground = "#ffffff"
     timeout = 10
+    frame_color = "#2b991f"
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
