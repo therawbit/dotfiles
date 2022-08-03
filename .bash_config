@@ -1,0 +1,30 @@
+
+
+#colors
+RED='\e[31;1m'
+ORANGE='\e[33;1m'
+BLUE='\033[01;34m'
+WHITE='\033[0;37m'
+DASH='\342\224\200'
+function git_branch(){
+
+	local BRANCH=$(git branch 2>/dev/null| grep "*" | awk '{print $2}')
+	if [ ! "$BRANCH" == "" ]
+	then
+		echo -e "─[ $ORANGE$BRANCH$RED ]"
+	else
+		echo ""
+	fi		
+}
+
+
+
+
+
+
+PS1="\[\033[1;31m\]┌───=[ \[\e[33;1m\]\u\[\e[31;1m\] ]$DASH[ \[\033[32m\]\w\[\e[31;1m\] ]\[\e[31;1m\]\$("git_branch")$DASH[ \[\033[01;34m\]\@\[\e[31;1m\] ]
+\[\e[31;1m\]└──▶ \[\e[0m\]"
+
+alias pacman="sudo pacman"
+alias upd="sudo pacman -Syu -y"
+alias clip='xclip -selection clipboard'
