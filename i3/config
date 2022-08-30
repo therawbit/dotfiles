@@ -133,12 +133,13 @@ set $ws9 "9"
 set $ws10 "10"
 
 # workspaces setting 
-# for_window [class="Subl"] move to workspace $ws3
+for_window [class="Subl"] move to workspace $ws3
 for_window [class="code-oss"] move to workspace $ws3code-oss
 for_window [class="firefox"] move to workspace $ws2
 for_window [class="Google-chrome"] move to workspace $ws2
 for_window [class="discord"] move to workspace $ws4
 for_window [class="TelegramDesktop"] move to workspace $ws4
+for_window [class="Spotify"] move to workspace $ws5
 
 #test
 for_window [class="SFML"] floating enable
