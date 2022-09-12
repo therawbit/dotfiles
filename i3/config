@@ -252,3 +252,6 @@ exec_always --no-startup-id picom --experimental-backends --conf ~/.config/picom
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+
+bindsym $mod+Shift+m exec bash ~/.config/scripts/randr.sh
