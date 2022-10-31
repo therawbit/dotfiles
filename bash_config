@@ -1,0 +1,46 @@
+#colors
+RED='\e[31;1m'
+YELLOW='\e[33;1m'
+BLUE='\033[01;34m'
+WHITE='\033[0;37m'
+DASH='\342\224\200'
+CYAN='\e[1;36m'
+PURPLE='\e[1;35m'
+GREEN='\e[1;32m'
+function git_branch(){
+
+	local BRANCH=$(git branch 2>/dev/null| grep "*" | awk '{print $2}')
+	if [ ! "$BRANCH" == "" ]
+	then
+		untracked=$(git status | grep -i "untracked\|new file")
+		modified=$(git status | grep -i "modified")
+
+		status=
+
+		if [ ! "$untracked" == "" ]
+		then
+			status=$(echo -e "$RED  ")
+		elif [ ! "$modified" == "" ]
+		then
+			status=$(echo -e "$YELLOW  ")
+		else
+			status=$(echo -e "$GREEN  ")
+		fi
+		echo -e "─[ $status$BRANCH$RED ]"
+	else
+		echo ""
+	fi		
+}
+
+
+
+
+
+PS1="${RED}┌───=[ ${YELLOW} \u${RED} ]$DASH[ ${CYAN} \w${RED} ]${RED}\$("git_branch")$DASH[ ${BLUE}\@${RED} ]
+${RED}└──▶ \[\e[0m\]"
+
+
+
+alias pacman="sudo pacman"
+alias upd="sudo pacman -Syu -y"
+alias clip='xclip -selection clipboard'
