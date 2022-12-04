@@ -44,7 +44,7 @@ exec --no-startup-id xfce4-power-manager
 
 
 # setting wallpapers 
-exec_always --no-startup-id feh --bg-fill ~/Pictures/4107423.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/desktop.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
