@@ -237,9 +237,8 @@ gaps inner 5
 for_window [class="^.*"] border pixel 0
 
 #screen shots
-bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
-bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
-bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+bindsym Print exec --no-startup-id flameshot screen
+bindsym Shift+Print exec --no-startup-id flameshot gui
 
 # picom 
 
