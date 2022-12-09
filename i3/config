@@ -242,7 +242,7 @@ bindsym Shift+Print exec --no-startup-id flameshot gui
 
 # picom 
 
-exec_always --no-startup-id picom --experimental-backends --conf ~/.config/picom/picom.conf &
+exec_always --no-startup-id picom  --conf ~/.config/picom/picom.conf &
 
 
 #media player
