@@ -74,4 +74,5 @@ setup_rice
 basic_apps
 remove_unwanted
 nautilus_terminal
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 
