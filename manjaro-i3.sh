@@ -36,6 +36,7 @@ function basic_apps(){
 	sudo pacman -S firefox --noconfirm
 	sudo pacman -S brave-browser --noconfirm
 	sudo pacman -S docker-compose --noconfirm
+	sudo pacman -S bash-completion --noconfirm
 
 }
 function setup_rice(){
