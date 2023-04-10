@@ -233,7 +233,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
 gaps inner 5
 
 # remove titlebar
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 0
 #screen shots
 bindsym Print exec --no-startup-id flameshot screen
 bindsym Shift+Print exec --no-startup-id flameshot gui
