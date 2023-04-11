@@ -135,9 +135,9 @@ set $ws10 "10"
 # workspaces setting 
 for_window [class="code-oss"] move to workspace $ws3
 for_window [class="jetbrains-idea-ce"] move to workspace $ws3
-for_window [class="firefox"] move to workspace $ws2
-for_window [class="Brave-browser"] move to workspace $ws2
-for_window [class="discord"] move to workspace $ws4
+for_window [class="firefox"] move to workspace $ws2 focus
+for_window [class="Brave-browser"] move to workspace $ws2 focus
+for_window [class="discord"] move to workspace $ws4 focus
 for_window [class="TelegramDesktop"] move to workspace $ws4
 for_window [class="Spotify"] move to workspace $ws5
 
@@ -233,7 +233,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
 gaps inner 5
 
 # remove titlebar
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 
 #screen shots
 bindsym Print exec --no-startup-id flameshot screen
 bindsym Shift+Print exec --no-startup-id flameshot gui
