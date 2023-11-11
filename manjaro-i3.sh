@@ -30,13 +30,13 @@ function basic_apps(){
 	sudo pacman -S code --noconfirm
 	sudo pacman -S eog --noconfirm
 	sudo pacman -S evince --noconfirm
-	sudo pacman -S jdk11-openjdk --noconfirm
+	sudo pacman -S jdk21-openjdk --noconfirm
 	sudo pacman -S docker --noconfirm
 	sudo pacman -S obsidian --noconfirm
 	sudo pacman -S firefox --noconfirm
 	sudo pacman -S brave-browser --noconfirm
 	sudo pacman -S docker-compose --noconfirm
-	sudo pacman -S bash-completion --noconfirm
+	sudo pacman -S zsh --noconfirm
 
 }
 function setup_rice(){
@@ -60,6 +60,8 @@ function remove_unwanted(){
 }
 
 function nautilus_terminal(){
+	mkdir -p ~/.local/share/nautilus/scripts
+	mkdir -p ~/.config/nautilus
 	echo '#!/bin/bash ' > ~/.local/share/nautilus/scripts/Terminal
 	echo 'alacritty' >> ~/.local/share/nautilus/scripts/Terminal
 
@@ -69,11 +71,12 @@ function nautilus_terminal(){
 
 }
 
-sudo pacman-mirrors --fasttrack 20  && sudo pacman -Syyu 
+# sudo pacman-mirrors --fasttrack 20  && sudo pacman -Syyu 
 ricing_dependency
 setup_rice
 basic_apps
 remove_unwanted
 nautilus_terminal
-gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+# gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 
+#export GTK_THEME=Graphite-Dark

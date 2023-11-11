@@ -254,4 +254,4 @@ bindsym $mod+Shift+m exec bash ~/.config/scripts/randr.sh
 
 # class        border  backgr.  text   indicator child_border
 
-client.focused #4c7899 #285577 #ffffff #2e9ef4    #dd86f6
+client.focused #E0E0E0 #E0E0E0 #000000 #E0E0E0 #E0E0E0
