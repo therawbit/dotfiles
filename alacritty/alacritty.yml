@@ -333,26 +333,30 @@ font:
   #transparent_background_colors: true
 colors:
   primary:
-    background: "#1E2128"
+    background: "#313131"
     foreground: "#E0E0E0"
   normal:
-    black: "#32344a"
-    red: "#b02727"
-    green: "#76b533"
-    yellow: "#c96e24"
-    blue: "#7aa2f7"
-    magenta: "#ad8ee6"
-    cyan: "#449dab"
-    white: "#E0E0E0"
+    black: "#606580"
+    red: "#eb4d4d"
+    green: "#a7e25f"
+    yellow: "#ffad5c"
+    blue: "#a7cdff"
+    magenta: "#e0c6ff"
+    cyan: "#7dd5df"
+    white: "#FCFCFC"
   bright:
-    black: "#444b6a"
-    red: "#ff7a93"
-    green: "#b9f27c"
-    yellow: "#ff9e64"
-    blue: "#7da6ff"
-    magenta: "#bb9af7"
-    cyan: "#0db9d7"
-    white: "#acb0d0"
+    black: "#6b7aa4"
+    red: "#ffa4bb"
+    green: "#c7ff8e"
+    yellow: "#ffdcb3"
+    blue: "#aecfff"
+    magenta: "#f7eaff"
+    cyan: "#9ee6ef"
+    white: "#e0e3f4"
+
+
+
+
 
 # Bell
 #
