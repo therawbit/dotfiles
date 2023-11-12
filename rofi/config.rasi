@@ -1,22 +1,25 @@
 
 configuration {
-  display-drun: "App:";
+  display-drun: "Application:";
   display-window: "Windows:";
   drun-display-format: "{name}";
   font: "JetBrainsMono Nerd Font Medium 10";
   modi: "window,run,drun";
+  fuzzy: true;
 }
 
 @theme "/dev/null"
 
 * {
-  bg: #282b3680;
+  bg: #2c2c2c;
   bg-alt: #1d1f21;
 
   fg: #FFFFFF;
   fg-alt: #787c99;
 
   background-color: @bg;
+  graphite-fg: #E0E0E0;
+  graphite-bg: #323232;
   
   border: 0;
   margin: 0;
@@ -25,21 +28,27 @@ configuration {
 }
 
 window {
-  width: 30%;
+  width: 40%;
+  border: 2px;
+  border-radius: 8px;
+  border-color: @graphite-fg;
+  padding: 8;
 }
 
 element {
-  padding: 8 0;
+  padding: 8 8;
   text-color: @fg-alt;
 }
 
 element selected {
-  text-color: @fg;
+  border-color: @graphite-fg;
+  border: 2px;
+  border-radius: 8px;
 }
 
 element-text {
   background-color: inherit;
-  text-color: inherit;
+  text-color: @graphite-fg;
   vertical-align: 0.5;
 }
 
@@ -47,10 +56,15 @@ element-icon {
   size: 30;
 }
 
+element-icon selected {
+  background-color: @graphite;
+}
+
 entry {
   background-color: @bg-alt;
   padding: 12;
   text-color: @fg;
+  border-radius: 0px 8px 8px 0px;
 }
 
 inputbar {
@@ -70,8 +84,10 @@ mainbox {
 }
 
 prompt {
-  background-color: @bg-alt;
+  background-color: @graphite-fg;
   enabled: true;
-  padding: 12 0 0 12;
-  text-color: @fg;
+  padding: 10 8 8 8;
+  text-color: @graphite-bg;
+  border-radius: 8px 0px 0px 8px;
+  text-align: center;
 }

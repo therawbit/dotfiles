@@ -333,7 +333,7 @@ font:
   #transparent_background_colors: true
 colors:
   primary:
-    background: "#313131"
+    background: "#282828"
     foreground: "#E0E0E0"
   normal:
     black: "#606580"
