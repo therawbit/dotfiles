@@ -1,0 +1,7 @@
+{
+    "custom/prompt": {
+    "format": " PPS",
+    "on-click": "rofi -show drun -show-icons",
+    "tooltip": false
+    }
+}

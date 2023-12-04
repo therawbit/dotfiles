@@ -1,0 +1,39 @@
+{
+    "height": 10, // Waybar height (to be removed for auto height)
+    "layer": "top", // Waybar at top layer
+    "modules-left": ["custom/prompt","hyprland/workspaces"],
+    "modules-center":[],
+    "modules-right": [
+        "network",
+        "group/hardware",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "clock",
+        "tray",
+    ],
+    "include": [
+        "~/.config/waybar/modules/workspaces.json",
+        "~/.config/waybar/modules/cpu.json",
+        "~/.config/waybar/modules/memory.json",
+        "~/.config/waybar/modules/backlight.json",
+        "~/.config/waybar/modules/pulseaudio.json",
+        "~/.config/waybar/modules/battery.json",
+        "~/.config/waybar/modules/clock.json",
+        "~/.config/waybar/modules/prompt.json",
+        "~/.config/waybar/modules/power.json",
+        "~/.config/waybar/modules/taskbar.json",
+        "~/.config/waybar/modules/network.json"
+      ],
+    "tray":{
+        "spacing": 10
+    },
+
+    "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+        "cpu",
+        "memory"
+    ]
+    },
+}
