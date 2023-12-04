@@ -1,3 +1,4 @@
 # dotfiles
 
-## Configuration files for i3 rice. 
+i3 and hyprland configs Endeavoros
+ubuntu base setup script 
