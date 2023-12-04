@@ -1,4 +1,5 @@
 # dotfiles
 
-i3 and hyprland configs Endeavoros
-ubuntu base setup script 
+- i3 and hyprland configs Endeavoros.
+
+- ubuntu base setup script 
