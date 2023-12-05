@@ -5,7 +5,8 @@ function ricing_dependency(){
 	sudo pacman -S ttf-jetbrains-mono-nerd --noconfirm
 	sudo pacman -S playerctl --noconfirm
 	sudo pacman -S hyprland --noconfirm
-	sudo pacman -S flameshot --noconfirm
+	sudo pacman -S grim --noconfirm
+	sudo pacman -S slurp --noconfirm
 	sudo pacman -S waybar --noconfirm
 	sudo pacman -S dunst --noconfirm
 	sudo pacman -S sddm --noconfirm
@@ -15,6 +16,8 @@ function ricing_dependency(){
 	sudo pacman -S pulseaudio --noconfirm
 	sudo pacman -S brightnessctl --noconfirm
 	sudo pacman -S inotify-tools --noconfirm
+	sudo pacman -S cliphist --noconfirm
+
 }
 
 function basic_apps(){
@@ -35,7 +38,6 @@ function basic_apps(){
 	sudo pacman -S brave-browser --noconfirm
 	sudo pacman -S docker-compose --noconfirm
 	sudo pacman -S zsh --noconfirm
-	sudo pacman -S cliphist --noconfirm
 
 }
 
@@ -49,6 +51,11 @@ function nautilus_terminal(){
 
 	echo '<Super>T Terminal' > ~/.config/nautilus/scripts-accels
 
+}
+
+function aur_packages(){
+	yay -S graphite-gtk-theme
+	yay -S wayland-logout
 }
 
 ricing_dependency
