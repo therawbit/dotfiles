@@ -57,7 +57,7 @@ element-icon {
 }
 
 element-icon selected {
-  background-color: @graphite;
+  background-color: @graphite-bg;
 }
 
 entry {
