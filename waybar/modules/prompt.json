@@ -1,7 +1,7 @@
 {
     "custom/prompt": {
     "format": " PPS",
-    "on-click": "rofi -show drun -show-icons",
+    "on-click": "rofi -show drun -show-icons -font 'Hack 14'",
     "tooltip": false
     }
 }

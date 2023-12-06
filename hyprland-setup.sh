@@ -9,7 +9,6 @@ function ricing_dependency(){
 	sudo pacman -S slurp --noconfirm
 	sudo pacman -S waybar --noconfirm
 	sudo pacman -S dunst --noconfirm
-	sudo pacman -S sddm --noconfirm
 	sudo pacman -S alacritty --noconfirm
 	sudo pacman -S hyprpaper --noconfirm
 	sudo pacman -S rofi --noconfirm
@@ -55,7 +54,7 @@ function nautilus_terminal(){
 
 function aur_packages(){
 	yay -S graphite-gtk-theme
-	yay -S wayland-logout
+
 }
 
 ricing_dependency
