@@ -54,6 +54,7 @@ function nautilus_terminal(){
 
 function aur_packages(){
 	yay -S graphite-gtk-theme
+	yay -S nwg-look-bin
 
 }
 
