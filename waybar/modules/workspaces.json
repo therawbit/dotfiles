@@ -9,8 +9,6 @@
             "active": "",
             "default": ""
         },
-        "persistent_workspaces": {
-             "*": 2
-        }       
+          
     }
 }
