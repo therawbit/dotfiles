@@ -6,7 +6,7 @@ save_sel="󰹟 Selection Save "
 
 actions="$copy_full\n$copy_sel\n$save_full\n$save_sel"
 
-selected="$(echo -e "$actions"| rofi -dmenu -i -font "Jetbrains mono nf 15")"
+selected="$(echo -e "$actions"| rofi -dmenu -p "Screenshot" -i -font "Jetbrains mono nf 15")"
 
 # if no options selected
 if test -z "$selected"; then
