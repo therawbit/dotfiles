@@ -128,18 +128,22 @@ label:focus {
 
 #taskbar {
     background: @backgroundlight;
-    margin: 3px 15px 3px 0px;
+    margin: 2px 15px 3px 0px;
     padding:5px;
     border-radius: 8px;
     font-style: normal;
     opacity:0.8;
-    border: 2px solid @backgroundlight;
 }
 
-#taskbar button {
+#taskbar button{
     margin:0;
     border-radius: 15px;
     padding: 0px 5px 0px 5px;
+    border-bottom: 1px solid transparent;
+}
+
+#taskbar button.active{
+    border-bottom: 1px solid @graphitewhite;
 }
 
 #pulseaudio {
