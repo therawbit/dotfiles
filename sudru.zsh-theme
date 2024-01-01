@@ -28,5 +28,6 @@ git_branch() {
   fi
 }
 
-newline=$'\n'
-PROMPT="%{$fg[magenta]%}╭─╼%{$fg[cyan]%} %{$fg[blue]%}%~ \$(git_branch)${newline}%{$fg[magenta]%}╰──▶ %{$fg[white]%}"
+# newline=$'\n'
+# PROMPT="%{$fg[magenta]%}╭─╼%{$fg[cyan]%} %{$fg[blue]%}%~ \$(git_branch)${newline}%{$fg[magenta]%}╰──▶ %{$fg[white]%}"
+PROMPT="%{$fg[yellow]%} %{$fg[magenta]%}%~\$(git_branch) %{$fg[cyan]%}▶ %{$fg[white]%}"
