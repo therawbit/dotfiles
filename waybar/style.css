@@ -29,7 +29,7 @@ window#waybar {
     border: 0px;
     font-style: normal;
     opacity: 0.8;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 #workspaces button {
@@ -47,7 +47,7 @@ window#waybar {
     color: @graphitedark;
     background: @workspacesbackground2;
     border-radius: 8px;
-    min-width: 40px;
+    min-width: 25px;
     transition: all 0.3s ease-in-out;
     opacity:1.0;
 }
@@ -130,15 +130,13 @@ label:focus {
     background: @backgroundlight;
     margin: 2px 15px 3px 0px;
     padding:5px;
-    border-radius: 8px;
     font-style: normal;
     opacity:0.8;
 }
 
 #taskbar button{
     margin:0;
-    border-radius: 15px;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 5px 1px 5px;
     border-bottom: 1px solid transparent;
 }
 
