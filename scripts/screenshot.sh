@@ -19,7 +19,7 @@ case $selected in
 			notify-send "Screenshot" "Selection copied to clipboard"
 			;;
         $copy_full)
-			grim - | wl-copy
+			sleep 0.5; grim - | wl-copy
 			notify-send "Screenshot" "Fullscreen copied to clipboard"
 			;;
 		$save_sel)
@@ -29,7 +29,7 @@ case $selected in
 			;;
         $save_full)
 			name=/home/$USER/Pictures/screenshot_$(date +%b-%d_%H-%H-%M-%S).png
-			grim "$name"
+			sleep 0.5; grim "$name"
 			notify-send "Screenshot" "Fullscreen saved to $name"
             ;;
 esac
