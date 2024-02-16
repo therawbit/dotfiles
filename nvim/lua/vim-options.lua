@@ -7,3 +7,4 @@ vim.g.mapleader = " "
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
   vim.lsp.handlers.hover, { focusable = false }
 )
+vim.keymap.set('n', '<A-r>', '!python')
