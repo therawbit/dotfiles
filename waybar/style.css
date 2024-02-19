@@ -10,7 +10,7 @@
 * {
     font-family: Jetbrains mono nf;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     border: none;
     border-radius: 0;
     padding: 0px;
@@ -24,16 +24,16 @@ window#waybar {
 
 #workspaces {
     background: @workspacesbackground1;
-    margin: 2px 1px 3px 1px;
+    margin: 2px 1px 1px 1px;
     padding: 0px 1px;
     border: 0px;
     font-style: normal;
     opacity: 0.8;
-    font-size: 8px;
+    font-size: 6px;
 }
 
 #workspaces button {
-    padding: 0px 4px;
+    padding: 0px 2px;
     margin: 3px 2px;
     border-radius: 5px;
     border: 0px;
@@ -41,13 +41,14 @@ window#waybar {
     background-color: @workspacesbackground2;
     transition: all 0.3s ease-in-out;
     opacity: 0.4;
+    font-size: 6px;
 }
 
 #workspaces button.active {
     color: @graphitedark;
     background: @workspacesbackground2;
     border-radius: 5px;
-    min-width: 25px;
+    min-width: 20px;
     transition: all 0.3s ease-in-out;
     opacity:1.0;
 }
@@ -128,7 +129,7 @@ label:focus {
 
 #taskbar {
     background: @backgroundlight;
-    margin: 2px 15px 3px 0px;
+    margin: 2px 5px 3px 0px;
     padding:5px;
     font-style: normal;
     opacity:0.8;
