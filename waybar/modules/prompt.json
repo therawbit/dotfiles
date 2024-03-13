@@ -1,7 +1,6 @@
 {
     "custom/prompt": {
     "format": " therawbit",
-    "on-click": "rofi -show drun -show-icons -font 'Hack 14'",
     "tooltip": false
     }
 }
