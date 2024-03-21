@@ -1,0 +1,7 @@
+#outer-box{
+  width: 40%;
+  border: 2px;
+  border-radius: 8px;
+  border-color: #E0E0E0;
+  padding: 8;
+}
