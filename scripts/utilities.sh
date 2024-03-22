@@ -1,6 +1,6 @@
 
 #! /bin/bash
-chosen=$(printf "Bluetooth Device Battery\nNepali Date" | rofi -dmenu -i -p "Utilities" -font "Hack 15" )
+chosen=$(printf "Bluetooth Device Battery\nNepali Date" | wofi -d  -i -p "Utilities" )
 
 case "$chosen" in
 	"Bluetooth Device Battery") ~/.config/scripts/bluetooth-battery.sh;;
