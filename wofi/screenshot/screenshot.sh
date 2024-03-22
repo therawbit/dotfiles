@@ -6,7 +6,7 @@ save_sel="󰹟 Selection Save "
 
 actions="$copy_full\n$copy_sel\n$save_full\n$save_sel"
 
-selected="$(echo -e "$actions"| wofi -d -p "Screenshot" -i)"
+selected="$(echo -e "$actions"| wofi -d -p "Eaa Screenshot po lini ?" -i)"
 
 # if no options selected
 if test -z "$selected"; then
