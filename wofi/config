@@ -1,6 +1,5 @@
 mode=drun
 stylesheet=./styles.css
-matching=fuzzy
 insensitive=true
 prompt=K kholna layes?
 normal_window=true
