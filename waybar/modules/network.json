@@ -2,7 +2,7 @@
     "network": {
 		"format": "{ifname}",
 		"format-wifi": " {signalStrength}%",
-		"format-ethernet": "󰈀 {ipaddr}",
+		"format-ethernet": "󰈀 ",
 		"format-disconnected": "󰖪 ", //An empty format will hide the module.
 		"tooltip-format": "{ifname} via {gwaddri}",
 		"tooltip-format-wifi": " {essid} ({ipaddr}/{cidr})",
