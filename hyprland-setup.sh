@@ -39,7 +39,8 @@ function basic_apps(){
 	sudo pacman -S brave-browser --noconfirm
 	sudo pacman -S docker-compose --noconfirm
 	sudo pacman -S zsh --noconfirm
-
+  sudo pacman -S neovim --noconfirm
+  sudo pacman -S xwaylandvideobridge --noconfirm
 }
 
 function nautilus_terminal(){
@@ -57,9 +58,10 @@ function nautilus_terminal(){
 function aur_packages(){
 	yay -S graphite-gtk-theme
 	yay -S nwg-look-bin
+  yay -S wlogout
 }
 
 ricing_dependency
 basic_apps
 nautilus_terminal
-
+aur_packages
