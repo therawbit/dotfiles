@@ -4,7 +4,7 @@ function ricing_dependency(){
 	sudo pacman -S ttf-jetbrains-mono --noconfirm
 	sudo pacman -S ttf-jetbrains-mono-nerd --noconfirm
 	sudo pacman -S playerctl --noconfirm
-  sudo pacman -S noto-fonts-emoji --noconfirm
+  	sudo pacman -S noto-fonts-emoji --noconfirm
 	sudo pacman -S hyprland --noconfirm
 	sudo pacman -S grim --noconfirm
 	sudo pacman -S slurp --noconfirm
@@ -17,7 +17,7 @@ function ricing_dependency(){
 	sudo pacman -S brightnessctl --noconfirm
 	sudo pacman -S inotify-tools --noconfirm
 	sudo pacman -S cliphist --noconfirm
-  sudo pacman -S wlsund --noconfirm
+  	sudo pacman -S wlsunset --noconfirm
 
 }
 
