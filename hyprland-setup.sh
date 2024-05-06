@@ -39,9 +39,9 @@ function basic_apps(){
 	sudo pacman -S brave-browser --noconfirm
 	sudo pacman -S docker-compose --noconfirm
 	sudo pacman -S zsh --noconfirm
-  sudo pacman -S neovim --noconfirm
-  sudo pacman -S xwaylandvideobridge --noconfirm
-  sudo pacman -S htop --noconfirm
+	sudo pacman -S neovim --noconfirm
+	sudo pacman -S xwaylandvideobridge --noconfirm
+	sudo pacman -S htop --noconfirm
 }
 
 function nautilus_terminal(){
@@ -49,17 +49,14 @@ function nautilus_terminal(){
 	mkdir -p ~/.config/nautilus
 	echo '#!/bin/bash ' > ~/.local/share/nautilus/scripts/Terminal
 	echo 'alacritty' >> ~/.local/share/nautilus/scripts/Terminal
-
 	chmod +x ~/.local/share/nautilus/scripts/Terminal
-
 	echo '<Super>T Terminal' > ~/.config/nautilus/scripts-accels
-
 }
 
 function aur_packages(){
 	yay -S graphite-gtk-theme
 	yay -S nwg-look-bin
-  yay -S wlogout
+  	yay -S wlogout
 }
 
 ricing_dependency
