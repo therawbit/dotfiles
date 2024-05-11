@@ -18,7 +18,7 @@ fi
 chosen_network=$(echo -e "$toggle\n$wifi_list" | wofi -d -p "Wi-Fi SSID: ")
 # Get name of connection
 chosen_id=$(echo "${chosen_network:3}" | xargs)
-
+ssid=$(echo $chosen_id | cut -d '[' -f 1 | cut -d ' ' -f 1)
 if [[ "$chosen_network" = "" ]]; then
     exit
 elif [[ "$chosen_network" = "Enable Wi-Fi" ]]; then
@@ -30,11 +30,10 @@ elif [[ "$chosen_network" = "Disable Wi-Fi" ]]; then
 else
     # Check if the network is saved
     saved_connections=$(nmcli -g NAME connection)
-    if grep -qw "$chosen_id" <<< "$saved_connections"; then
+    if grep -qw "$ssid" <<< "$saved_connections"; then
         success_message="Connection Established to $chosen_id."
-        nmcli connection up id "$chosen_id" | grep "successfully" && notify-send "Connection Established" "$success_message"
+        nmcli connection up id "$ssid" | grep "successfully" && notify-send "Connection Established" "$success_message"
     else
-    	ssid=$(echo $chosen_id | cut -d '[' -f 1 | cut -d ' ' -f 1)
     	echo "ssid: $ssid"
         # Prompt for password if needed
         if [[ "$chosen_network" =~ "" ]]; then
