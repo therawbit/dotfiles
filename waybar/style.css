@@ -129,7 +129,7 @@ label:focus {
 
 #taskbar {
     background: @backgroundlight;
-    margin: 2px 5px 3px 0px;
+    margin: 0px 5px 3px 0px;
     padding:5px;
     font-style: normal;
     opacity:0.8;
