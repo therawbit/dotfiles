@@ -18,7 +18,8 @@ fi
 chosen_network=$(echo -e "$toggle\n$wifi_list" | wofi -d -p "Wi-Fi SSID: ")
 # Get name of connection
 chosen_id=$(echo "${chosen_network:3}" | xargs)
-ssid=$(echo $chosen_id | cut -d '[' -f 1 | cut -d ' ' -f 1)
+ssid=$(echo $chosen_id | cut -d '[' -f 1 | sed 's/^\s//g' | sed 's/\s$//g')
+echo $ssid;
 if [[ "$chosen_network" = "" ]]; then
     exit
 elif [[ "$chosen_network" = "Enable Wi-Fi" ]]; then
