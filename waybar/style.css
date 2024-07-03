@@ -10,7 +10,7 @@
 * {
     font-family: Jetbrains mono nf;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     border: none;
     border-radius: 0;
     padding: 0px;
@@ -29,7 +29,6 @@ window#waybar {
     border: 0px;
     font-style: normal;
     opacity: 0.8;
-    font-size: 6px;
 }
 
 #workspaces button {
@@ -63,11 +62,11 @@ window#waybar {
 
 #custom-prompt {
     background-color: @graphitewhite;
-    font-size: 13px;
+    font-size: 12px;
     color: @graphitedark;
     border-radius: 5px ;
-    padding: 0px 10px 0px 10px;
-    margin: 3px 5px 3px 5px;
+    padding: 1px 5px 1px 5px;
+    margin: 5px 5px 4px 5px;
     opacity:1;
 }
 
@@ -147,7 +146,6 @@ label:focus {
 
 #pulseaudio {
     background-color: @graphitewhite;
-    font-size: 13px;
     color: @graphitedark;
     border-radius: 5px;
     padding: 2px 5px 0px 10px;
@@ -158,7 +156,6 @@ label:focus {
 
 #battery {
     background-color: @graphitewhite;
-    font-size: 13px;
     color: @graphitedark;
     border-radius: 5px;
     padding: 2px 15px 0px 10px;
@@ -168,7 +165,6 @@ label:focus {
 
 #clock {
     background-color: @graphitewhite;
-    font-size: 13px;
     color: @graphitedark;
     border-radius: 5px;
     padding: 2px 8px 0px 10px;
@@ -177,7 +173,6 @@ label:focus {
 }
 #backlight{
     background-color: @graphitewhite;
-    font-size: 13px;
     color: @graphitedark;
     border-radius: 5px;
     padding: 2px 8px 0px 10px;
@@ -187,7 +182,6 @@ label:focus {
 
 #cpu{
     background-color: @graphitewhite;
-    font-size: 13px;
     color: @graphitedark;
     border-radius: 5px 0px 0px 5px;
     padding: 2px 0px 0px 8px;
@@ -196,7 +190,6 @@ label:focus {
 }
 #memory{
     background-color: @graphitewhite;
-    font-size: 13px;
     color: @graphitedark;
     border-radius: 0px 5px 5px 0px;
     padding: 2px 5px 0px 0px;
@@ -206,7 +199,6 @@ label:focus {
 
 #network{
     background-color: @graphitewhite;
-    font-size: 13px;
     color: @graphitedark;
     border-radius: 5px;
     padding: 2px 8px 0px 10px;
