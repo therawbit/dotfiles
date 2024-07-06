@@ -1,11 +1,12 @@
 {
     // "height": 10, // Waybar height (to be removed for auto height)
-    "layer": "top", // Waybar at top layer
-    "modules-left": ["custom/prompt","hyprland/workspaces"],
-    "modules-center":["wlr/taskbar"],
+    "layer": "bottom", // Waybar at top layer
+    "modules-left": ["custom/prompt","wlr/taskbar"],
+    "modules-center":["hyprland/workspaces"],
     "modules-right": [
         "network",
-        "group/hardware",
+        "cpu",
+        "memory",
         "pulseaudio",
         "backlight",
         "battery",
@@ -27,13 +28,5 @@
       ],
     "tray":{
         "spacing": 10
-    },
-
-    "group/hardware": {
-    "orientation": "horizontal",
-    "modules": [
-        "cpu",
-        "memory"
-    ]
     },
 }

@@ -245,7 +245,7 @@
     # layer = top
 
     # Set this to true to use X11 output on Wayland.
-    force_xwayland = false
+    force_xwayland = true
 
     ### Legacy
 
@@ -296,7 +296,7 @@
     foreground = "#e5e1e5"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    default_icon = ~/Pictures/arch.png
 
 [urgency_normal]
     background = "#222222"

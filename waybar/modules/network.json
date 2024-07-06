@@ -1,7 +1,7 @@
 {
     "network": {
 		"format": "{ifname}",
-		"format-wifi": " {signalStrength}%",
+		"format-wifi": "  {signalStrength}%",
 		"format-ethernet": "󰈀 ",
 		"format-disconnected": "󰖪 ", //An empty format will hide the module.
 		"tooltip-format": "{ifname} via {gwaddri}",

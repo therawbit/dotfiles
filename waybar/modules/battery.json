@@ -1,13 +1,13 @@
 {
     "battery": {
         "interval": 5,
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}%{icon}",
+        "format": "{icon} {capacity}% ",
+        "format-charging": "{icon} {capacity}%",
         //"format-charging-alt": "{time} {icon}",
-        "format-plugged": "{capacity}%{icon}",
+        "format-plugged": "{icon} {capacity}%",
         //"format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
-        "format-full": "100% ",
-        "format-icons": ["", "", "", "", ""]
+        "format-full": "  100%",
+        "format-icons": [" ", " ", " ", " ", " "]
     }
 }

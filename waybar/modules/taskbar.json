@@ -9,5 +9,6 @@
        "Alacritty",
       "wofi"
     ],
+    "sort-by-app-id": true
 }
 }
