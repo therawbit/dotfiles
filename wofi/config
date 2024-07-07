@@ -2,4 +2,4 @@ mode=drun
 stylesheet=./styles.css
 insensitive=true
 prompt=K kholna layes?
-normal_window=true
+normal_window=false
