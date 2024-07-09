@@ -87,10 +87,11 @@ window#waybar {
 
 tooltip {
     padding: 4px;
-    border: solid 1px #E0E0E0;
+    border: solid 1px @mauve;
     color: @foreground;
-    background-color: #303030;
+    background-color: #15171f;
     /*font-family: CartographCF Nerd Font;*/
+    border-radius: 6px;
 }
 
 tooltip label {
