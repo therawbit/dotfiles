@@ -43,8 +43,10 @@ function basic_apps(){
 	sudo pacman -S neovim --noconfirm
 	sudo pacman -S xwaylandvideobridge --noconfirm
 	sudo pacman -S htop --noconfirm
+  sudo pacman -S ly --noconfirm
 }
-
+# cliphist-wofi-img 
+#
 function nautilus_terminal(){
 	mkdir -p ~/.local/share/nautilus/scripts
 	mkdir -p ~/.config/nautilus
