@@ -1,6 +1,0 @@
-mode=drun
-stylesheet=./styles.css
-insensitive=true
-prompt=K kholna layes?
-normal_window=false
-pre_display_exec=true
