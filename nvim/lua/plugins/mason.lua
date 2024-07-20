@@ -1,24 +1,49 @@
 return {
-    "williamboman/mason.nvim",
-    cmd = "Mason",
-    opts = {
-        ui = {
-            check_outdated_servers_on_open = true,
-            border = "rounded",
-            icons = {
-                package_installed = "✓",
-                package_pending = "➜",
-                package_uninstalled = "✗"
-            },
-            keymaps = {
-                toggle_server_expand = "<CR>",
-                install_server = "i",
-                update_server = "u",
-                check_server_version = "c",
-                update_all_servers = "U",
-                check_outdated_servers = "C",
-                uninstall_server = "X"
-            }
-        }
-    }
+	"williamboman/mason.nvim",
+	dependencies = {
+		"williamboman/mason-lspconfig.nvim",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+	},
+	config = function()
+		-- import mason
+		local mason = require("mason")
+
+		-- import mason-lspconfig
+		local mason_lspconfig = require("mason-lspconfig")
+
+		local mason_tool_installer = require("mason-tool-installer")
+
+		-- enable mason and configure icons
+		mason.setup({
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
+		})
+
+		mason_lspconfig.setup({
+			-- list of servers for mason to install
+			ensure_installed = {
+				"html",
+				"cssls",
+				"lua_ls",
+				"emmet_ls",
+				"pyright",
+			},
+		})
+
+		mason_tool_installer.setup({
+			ensure_installed = {
+				"prettier", -- prettier formatter
+				"stylua", -- lua formatter
+				"isort", -- python formatter
+				"black", -- python formatter
+				"pylint",
+				"eslint_d",
+			},
+		})
+	end,
 }
