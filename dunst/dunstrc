@@ -202,7 +202,7 @@
 
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.
-    sticky_history = yes
+    sticky_history = no
 
     # Maximum amount of notifications kept in history
     history_length = 20
@@ -245,7 +245,7 @@
     # layer = top
 
     # Set this to true to use X11 output on Wayland.
-    force_xwayland = true
+    force_xwayland = false
 
     ### Legacy
 
@@ -274,7 +274,7 @@
     # * context_all: Open context menu for all notifications.
     # These values can be strung together for each mouse event, and
     # will be executed in sequence.
-    mouse_left_click = close_current
+    mouse_left_click = do_action, close_current
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
 
@@ -294,14 +294,14 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#15171f"
     foreground = "#e5e1e5"
-    timeout = 10
+    timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     default_icon = ~/Pictures/arch.png
 
 [urgency_normal]
     background = "#15171f"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 8
     frame_color = "#E0E0E0"
     # Icon for notifications with normal urgency, uncomment to enable
     default_icon = ~/Pictures/arch.png
@@ -310,7 +310,7 @@
     background = "#900000"
     foreground = "#ffffff"
     frame_color = "#ff0000"
-    timeout = 0
+    timeout = 10
     # Icon for notifications with critical urgency, uncomment to enable
     default_icon = ~/Pictures/arch.png
 
