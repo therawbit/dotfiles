@@ -4,9 +4,8 @@
 screenshot=$(mktemp --suffix=.png)
 grim -g "$(slurp)" "$screenshot"
 
-languages="eng+nep"
 # Run tesseract OCR on the screenshot and store the output in a variable
-text=$(tesseract "$screenshot" - -l $languages)
+text=$(tesseract "$screenshot" -)
 # Copy the recognized text to the clipboard using cliphist
 echo "$text" | wl-copy
 

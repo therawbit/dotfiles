@@ -19,8 +19,7 @@ function ricing_dependency(){
 	sudo pacman -S cliphist --noconfirm
  	sudo pacman -S wlsunset --noconfirm
   sudo pacman -S swaylock --noconfirm
-  sudo pacman -S tesseract --noconfirm
-  sudo pacman -S tesseract-data-nep --noconfirm
+
 }
 
 function basic_apps(){
