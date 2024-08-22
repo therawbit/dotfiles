@@ -11,4 +11,4 @@ echo "$text" | wl-copy
 
 # Clean up the temporary screenshot file
 rm "$screenshot"
-
+notify-send -u low "OCR:" "Text copied to clipboard" -t 2000
