@@ -18,7 +18,7 @@ function ricing_dependency(){
 	sudo pacman -S inotify-tools --noconfirm
 	sudo pacman -S cliphist --noconfirm
  	sudo pacman -S wlsunset --noconfirm
-  sudo pacman -S swaylock --noconfirm
+  sudo pacman -S hyprlock --noconfirm
 
 }
 
@@ -60,6 +60,8 @@ function aur_packages(){
 	yay -S graphite-gtk-theme
 	yay -S nwg-look-bin
   	yay -S wlogout
+    yay -S code-marketplace
+    yay -S kora-icon-theme
 }
 
 ricing_dependency
