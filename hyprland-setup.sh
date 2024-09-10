@@ -26,7 +26,6 @@ function basic_apps(){
 	sudo pacman -S nautilus --noconfirm
 	sudo pacman -S gnome-disk-utility --noconfirm
 	sudo pacman -S vlc --noconfirm
-	sudo pacman -S gnome-keyring --noconfirm
 	sudo pacman -S python-pip --noconfirm
 	sudo pacman -S discord --noconfirm
 	sudo pacman -S telegram-desktop --noconfirm
@@ -44,6 +43,8 @@ function basic_apps(){
 	sudo pacman -S xwaylandvideobridge --noconfirm
 	sudo pacman -S htop --noconfirm
   sudo pacman -S ly --noconfirm
+	sudo pacman -S xdg-desktop-portal --noconfirm
+	sudo pacman -S polkit-kde-agent
 }
 # cliphist-wofi-img 
 #
@@ -58,13 +59,14 @@ function nautilus_terminal(){
 
 function aur_packages(){
 	yay -S graphite-gtk-theme
-	yay -S nwg-look-bin
-  	yay -S wlogout
-    yay -S code-marketplace
-    yay -S kora-icon-theme
+	yay -S nwg-look
+ 	yay -S wlogout
+  yay -S code-marketplace
+  yay -S kora-icon-theme
 }
 
 ricing_dependency
 basic_apps
 nautilus_terminal
 aur_packages
+
