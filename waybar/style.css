@@ -106,7 +106,7 @@ label:focus {
 #taskbar button {
   margin: 0;
   padding: 0px 5px 0px 5px;
-  border: none;
+  border-bottom: 1px solid transparent;
   border-radius: 2px;
 }
 
