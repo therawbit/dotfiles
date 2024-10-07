@@ -19,6 +19,7 @@ function ricing_dependency(){
 	sudo pacman -S cliphist --noconfirm
  	sudo pacman -S wlsunset --noconfirm
   sudo pacman -S hyprlock --noconfirm
+  sudo pacman -S hypridle --noconfirm
 
 }
 
@@ -40,10 +41,9 @@ function basic_apps(){
 	sudo pacman -S docker-compose --noconfirm
 	sudo pacman -S zsh --noconfirm
 	sudo pacman -S neovim --noconfirm
-	sudo pacman -S xwaylandvideobridge --noconfirm
 	sudo pacman -S htop --noconfirm
-  sudo pacman -S ly --noconfirm
-	sudo pacman -S xdg-desktop-portal --noconfirm
+  sudo pacman -S greetd-regreet --noconfirm
+	sudo pacman -S xdg-desktop-portal-hyprland --noconfirm
 	sudo pacman -S polkit-kde-agent
 }
 # cliphist-wofi-img 
@@ -64,7 +64,39 @@ function aur_packages(){
   yay -S code-marketplace
   yay -S kora-icon-theme
 }
+function map_shortcuts(){
 
+# Set the source and destination directories
+source_dir="$HOME/.config/dotfiles"
+dest_dir="$HOME/.config"
+
+# Check if source directory exists
+if [[ ! -d "$source_dir" ]]; then
+    echo "Source directory $source_dir does not exist."
+    exit 1
+fi
+
+# Loop through all directories inside source_dir
+for dir in "$source_dir"/*/; do
+    # Get the folder name
+    folder_name=$(basename "$dir")
+    
+    # Full path of the destination symlink
+    dest_path="$dest_dir/$folder_name"
+    
+    # Check if the symlink or directory already exists, remove it if true
+    if [[ -e "$dest_path" || -L "$dest_path" ]]; then
+        rm -rf "$dest_path"
+        echo "Removed existing $dest_path"
+    fi
+    
+    # Create the symbolic link
+    ln -s "$dir" "$dest_path"
+done
+
+echo "All folders from $source_dir have been linked to $dest_dir."
+
+}
 ricing_dependency
 basic_apps
 nautilus_terminal

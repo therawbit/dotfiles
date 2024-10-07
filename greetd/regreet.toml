@@ -1,0 +1,16 @@
+[commands]
+reboot = [ "systemctl", "reboot" ]
+poweroff = [ "systemctl", "poweroff" ]
+
+[background]
+path = "/usr/share/backgrounds/desktop-blur.png"
+
+[GTK]
+application_prefer_dark_theme = true
+cursor_theme_name = "Adwaita"
+icon_theme_name = "Adwaita"
+theme_name = "Graphite-Dark-compact"
+
+
+[appearance]
+greeting_msg = "Hey! What are you up to this time?"
