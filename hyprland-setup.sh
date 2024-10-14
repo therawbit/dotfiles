@@ -45,6 +45,7 @@ function basic_apps() {
   sudo pacman -S greetd-regreet --noconfirm
   sudo pacman -S xdg-desktop-portal-hyprland --noconfirm
   sudo pacman -S polkit-kde-agent
+  sudo pacman -S bat --noconfirm
 }
 # cliphist-wofi-img
 #
