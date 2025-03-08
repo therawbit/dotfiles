@@ -11,14 +11,14 @@ return {
 		local neotree = require("neo-tree")
 		neotree.setup({
 			window = {
-				position = "right",
+				position = "left",
 				width = 30,
 				mappings = {
-					["P"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },
+					["P"] = "toggle_preview",
 					["<C-b>"] = "toggle",
 				},
 			},
 		})
-		keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>")
+		keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>", { noremap = true, silent = true })
 	end,
 }

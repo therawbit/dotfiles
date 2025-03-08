@@ -16,7 +16,7 @@ return {
 		local lspkind = require("lspkind")
 		require("luasnip.loaders.from_vscode").lazy_load()
 
-		vim.o.completeopt = "menu,menuone,preview,noselect"
+		vim.o.completeopt = "menu,menuone,preview"
 
 		local signs = {
 			{ name = "DiagnosticSignError", text = "" },
@@ -77,6 +77,8 @@ return {
 					return kind
 				end,
 			},
+			preselect = cmp.PreselectMode.Item, -- Automatically preselect the first item
+
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
 				["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
@@ -85,6 +87,10 @@ return {
 				["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
 				["<C-e>"] = cmp.mapping.abort(), -- close completion window
 				["<CR>"] = cmp.mapping.confirm({
+					behavior = cmp.ConfirmBehavior.Replace,
+					select = true,
+				}),
+				["<Tab>"] = cmp.mapping.confirm({
 					behavior = cmp.ConfirmBehavior.Replace,
 					select = true,
 				}),
