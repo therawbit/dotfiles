@@ -33,7 +33,7 @@ newline=$'\n'
 # PROMPT="%{$fg[magenta]%}╭─╼%{$fg[cyan]%} %{$fg[blue]%}%~ \$(git_branch)${newline}%{$fg[magenta]%}╰──▶ %{$fg[white]%}"
 PROMPT="%{$fg[yellow]%} %{$fg[magenta]%}%~\$(git_branch) %{$fg[cyan]%}▶ %{$fg[white]%}"
 
-
+export LS_COLORS="di=01;34:fi=0:ln=01;36:pi=33:so=35:bd=01;33:cd=01;33:or=01;31:mi=01;41:su=37;41:sg=30;43:tw=30;42:ow=30;42:"
 
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward

@@ -61,11 +61,10 @@ function nautilus_terminal() {
 }
 
 function aur_packages() {
-  yay -S graphite-gtk-theme
-  yay -S nwg-look
-  yay -S wlogout
-  yay -S code-marketplace
-  yay -S kora-icon-theme
+  yay -S nwg-look --noconfirm
+  yay -S wlogout --noconfirm
+  yay -S code-marketplace --noconfirm
+  yay -S kora-icon-theme --noconfirm
 }
 function map_shortcuts() {
 
@@ -100,8 +99,20 @@ function map_shortcuts() {
   echo "All folders from $source_dir have been linked to $dest_dir."
 
 }
+function setupFlameshot(){
+  mkdir -p $HOME/.config/flameshot
+  echo '[General]' > $HOME/.config/flameshot/flameshot.ini
+  echo 'useGrimAdapter=true' >> $HOME/.config/flameshot/flameshot.ini
+}
+function copyWallpapers(){
+  cd ~/.config/dotfiles/wallpapers
+  mkdir -p $HOME/Pictures
+  cp * $HOME/Pictures/
+}
 ricing_dependency
 basic_apps
 nautilus_terminal
 aur_packages
 map_shortcuts
+setupFlameshot
+copyWallpapers
