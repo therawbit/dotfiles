@@ -21,6 +21,8 @@ function ricing_dependency() {
   sudo pacman -S wlsunset --noconfirm
   sudo pacman -S hyprlock --noconfirm
   sudo pacman -S hypridle --noconfirm
+  sudo pacman -S npm --noconfirm
+  sudo pacman -S nodejs --confirm
 
 }
 
