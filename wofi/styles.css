@@ -8,9 +8,10 @@
 #outer-box {
   border-radius: 8px;
   padding: 10px;
-  border: 2px solid #b4befe;
+  /* border: 1px solid #b4befe; */
   background-color: #17151f;
   opacity: 0.8;
+  width: 40%;
 }
 
 #entry:selected {
