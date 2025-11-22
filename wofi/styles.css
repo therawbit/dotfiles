@@ -9,20 +9,21 @@
   border-radius: 8px;
   padding: 10px;
   /* border: 1px solid #b4befe; */
-  background-color: #17151f;
+  background-color: #121212;
   opacity: 0.8;
   width: 40%;
 }
 
 #entry:selected {
-  border: 1px solid #f9e2af;
-  background-color: transparent;
+  background-color: #e5e5e5;
   padding: 3px;
+  color: #121212;
 }
 #input {
   padding: 3px;
   border: none;
 }
 #inner-box {
-  background-color: #17151f;
+  margin-top: 10px;
+  background-color: #121212;
 }

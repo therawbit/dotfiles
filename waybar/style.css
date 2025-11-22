@@ -13,12 +13,24 @@
 }
 
 window#waybar {
-  background-color: #15171f;
+  background-color: transparent;
   padding: 0px;
   margin: 0px 5px 0px 5px;
 }
+
+#network,
+#battery,
+#backlight,
+#pulseaudio,
+#cpu,
+#memory,
+#clock {
+  background-color: @graphitewhite;
+  color: @graphitedark;
+  border-radius: 10px;
+}
+
 #workspaces {
-  border: 1px solid @flamingo;
   margin: 7px 5px 7px 0px;
   padding: 0px 1px;
   border-radius: 6px;
@@ -28,7 +40,7 @@ window#waybar {
 
 #workspaces button {
   padding: 0px 2px;
-  color: @rosewater;
+  color: @graphiteblack;
   /* border-radius: 5px; */
   border: 0px;
   transition: all 0.3s ease-in-out;
@@ -43,12 +55,14 @@ window#waybar {
 }
 
 #custom-prompt {
-  border-radius: 6px;
-  color: @blue;
+  border-radius: 10px;
+  color: @graphitedark;
 
   padding: 0px 5px 0px 5px;
-  margin: 7px 5px 7px 5px;
+  margin: 6px 5px 6px 5px;
+  font-size: 12px;
   opacity: 1;
+  background-color: @graphitewhite;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -79,8 +93,8 @@ window#waybar {
 
 tooltip {
   padding: 4px;
-  border: solid 1px @mauve;
-  color: @foreground;
+  border: solid 1px @graphitewhite;
+  color: @graphitewhite;
   background-color: #15171f;
   /*font-family: CartographCF Nerd Font;*/
   border-radius: 6px;
@@ -111,49 +125,44 @@ label:focus {
 }
 
 #taskbar button.active {
-  border-bottom: 1px solid @flamingo;
+  border-bottom: 1px solid @graphitewhite;
 }
 
 #pulseaudio {
   margin: 7px 5px 7px 0px;
   padding: 0px 5px 0px 5px;
-  color: @sky;
 }
 
 #battery {
   margin: 7px 5px 7px 0px;
   padding: 0px 5px 0px 5px;
-  color: @rosewater;
 }
 
 #clock {
-  color: @lavender;
-  margin: 7px 5px 7px 0px;
-  padding: 0px 5px;
+  margin: 4px 4px 4px 4px;
   border: 1px solid;
-  border-radius: 6px;
+  padding: 0px 6px 0px 6px;
+  font-weight: bold;
+  font-size: 12px;
 }
 #backlight {
   margin: 7px 5px 7px 0px;
   padding: 0px 5px 0px 5px;
-  color: @yellow;
 }
 
 #cpu {
   margin: 7px 5px 7px 0px;
   padding: 0px 5px 0px 5px;
-  color: @pink;
 }
 #memory {
   margin: 7px 5px 7px 0px;
   padding: 0px 5px 0px 5px;
-  color: @red;
 }
 
 #network {
   margin: 7px 5px 7px 0px;
   padding: 0px 5px 0px 5px;
-  color: @peach;
+  font-size: 12px;
 }
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
