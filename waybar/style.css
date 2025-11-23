@@ -31,11 +31,12 @@ window#waybar {
 }
 
 #workspaces {
-  margin: 7px 5px 7px 0px;
+  margin: 4px 5px 4px 0px;
   padding: 0px 1px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-style: normal;
-  opacity: 0.8;
+  background-color: @graphitedark;
+  opacity: 1;
 }
 
 #workspaces button {
@@ -44,9 +45,8 @@ window#waybar {
   /* border-radius: 5px; */
   border: 0px;
   transition: all 0.3s ease-in-out;
-  opacity: 0.5;
+  opacity: 0.6;
 }
-
 #workspaces button.active {
   /* background: @workspacesbackground2; */
   border-radius: 4px;
@@ -59,7 +59,7 @@ window#waybar {
   color: @graphitedark;
 
   padding: 0px 5px 0px 5px;
-  margin: 6px 5px 6px 5px;
+  margin: 4px 5px 4px 5px;
   font-size: 12px;
   opacity: 1;
   background-color: @graphitewhite;
@@ -129,12 +129,12 @@ label:focus {
 }
 
 #pulseaudio {
-  margin: 7px 5px 7px 0px;
+  margin: 4px 5px 4px 0px;
   padding: 0px 5px 0px 5px;
 }
 
 #battery {
-  margin: 7px 5px 7px 0px;
+  margin: 4px 5px 4px 0px;
   padding: 0px 5px 0px 5px;
 }
 
@@ -146,12 +146,12 @@ label:focus {
   font-size: 12px;
 }
 #backlight {
-  margin: 7px 5px 7px 0px;
+  margin: 4px 5px 4px 0px;
   padding: 0px 5px 0px 5px;
 }
 
 #cpu {
-  margin: 7px 5px 7px 0px;
+  margin: 4px 5px 4px 0px;
   padding: 0px 5px 0px 5px;
 }
 #memory {
@@ -160,7 +160,7 @@ label:focus {
 }
 
 #network {
-  margin: 7px 5px 7px 0px;
+  margin: 4px 5px 4px 0px;
   padding: 0px 5px 0px 5px;
   font-size: 12px;
 }

@@ -22,6 +22,7 @@
     "~/.config/waybar/modules/prompt.json",
     "~/.config/waybar/modules/power.json",
     "~/.config/waybar/modules/taskbar.json",
+    "~/.config/waybar/modules/window.json",
     "~/.config/waybar/modules/network.json"
   ],
   "tray": {
