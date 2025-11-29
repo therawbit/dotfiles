@@ -111,10 +111,32 @@ function copyWallpapers(){
   mkdir -p $HOME/Pictures
   cp * $HOME/Pictures/
 }
-ricing_dependency
-basic_apps
-nautilus_terminal
-aur_packages
-map_shortcuts
-setupFlameshot
-copyWallpapers
+function securityTools(){
+  sudo pacman -S go --noconfirm;
+  go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest;
+  go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+  sudo pacman -S gobuster --noconfirm
+  sudo pacman -S nmap --noconfirm
+  sudo pacman -S wireshark-qt --noconfirm
+  sudo pacman -S sqlitebrowser --noconfirm
+  sudo pacman -S exiftool --noconfirm
+  sudo pacman -S binwalk --noconfirm
+
+}
+
+if [[ "$1" == "base" ]]
+then
+  ricing_dependency
+  basic_apps
+  nautilus_terminal
+  aur_packages
+  map_shortcuts
+  setupFlameshot
+  copyWallpapers
+fi
+
+if [[ "$1" == "tools" ]]
+then
+  securityTools
+fi
+
