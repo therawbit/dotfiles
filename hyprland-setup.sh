@@ -22,8 +22,9 @@ function ricing_dependency() {
   sudo pacman -S hyprlock --noconfirm
   sudo pacman -S hypridle --noconfirm
   sudo pacman -S npm --noconfirm
-  sudo pacman -S nodejs --confirm
-
+  sudo pacman -S nodejs --noconfirm
+  sudo pacman -S npm --noconfirm
+  sudo pacman -S udiskie --noconfirm
 }
 
 function basic_apps() {
