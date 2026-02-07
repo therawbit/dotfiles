@@ -3,7 +3,7 @@ reboot = [ "systemctl", "reboot" ]
 poweroff = [ "systemctl", "poweroff" ]
 
 [background]
-path = "/usr/share/backgrounds/desktop-blur.png"
+path = "/home/therawbit/Pictures/desktop-blur.png"
 
 [GTK]
 application_prefer_dark_theme = true
