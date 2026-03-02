@@ -51,6 +51,7 @@ function basic_apps() {
   sudo pacman -S polkit-kde-agent
   sudo pacman -S bat --noconfirm
   sudo pacman -S flameshot --noconfirm
+  sudo pacman -S vlc-plugins-all --noconfirm
 }
 # cliphist-wofi-img
 #
