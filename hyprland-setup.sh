@@ -14,7 +14,7 @@ function ricing_dependency() {
   sudo pacman -S alacritty --noconfirm
   sudo pacman -S hyprpaper --noconfirm
   sudo pacman -S wofi --noconfirm
-  sudo pacman -S pulseaudio --noconfirm
+  # sudo pacman -S pulseaudio --noconfirm
   sudo pacman -S brightnessctl --noconfirm
   sudo pacman -S inotify-tools --noconfirm
   sudo pacman -S cliphist --noconfirm
